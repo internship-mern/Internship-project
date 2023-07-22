@@ -35,9 +35,9 @@
 }
 .cards
 {
-    width:330px;
+    width:430px;
     margin: 25px;
-    height: 450px;
+    height: 300px;
     border-radius: 10px;
     background-color:#bae8e8;
     border: 2px solid rgb(146, 146, 146);
@@ -53,5 +53,10 @@
 }
 .cards h2{
     text-align: center;
-
+    line-height: 22px;
+}
+.card-icons
+{
+    margin-right: 15px;
+    vertical-align: middle;
 }

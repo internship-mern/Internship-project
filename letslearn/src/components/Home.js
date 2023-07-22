@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/home.css'
 import '../scroll.js'
+import {FaDesktop,FaFileAlt,FaFileVideo,FaLaptopCode,FaFacebookMessenger,FaFolder} from 'react-icons/fa'
 
 const Home = () => {
   return (
@@ -12,24 +13,26 @@ const Home = () => {
        <hr/>
        <div id='cards-container'>
            <div className='cards'>
-             <h2>Quiz / Online Assesments</h2>
+
+             <h2> <FaDesktop className='card-icons'/> Quiz / Online Assesments</h2>
+
            </div>
            <div className='cards'>
-             <h2>Files & Documents</h2>
+             <h2> <FaFolder className='card-icons'/>Files & Documents</h2>
            </div>
            <div className='cards'>
-              <h2>Lectures</h2>
+              <h2><FaFileVideo className='card-icons'/>Lectures</h2>
            </div>
            <div className='cards'>
-              <h2>Programming Languages <br/> &
+              <h2><FaLaptopCode  className='card-icons'/> Programming Languages <br/> &
                 Tutorials
               </h2>
            </div>
            <div className='cards'>
-              <h2>Chats & Messages</h2>  
+              <h2> <FaFacebookMessenger  className='card-icons'/>Chats & Messages</h2>  
            </div>
            <div className='cards'>
-              <h2>OD / Leave Form </h2>
+              <h2> <FaFileAlt  className='card-icons'/>OD / Leave Form </h2>
            </div>
        </div>
     </div>
