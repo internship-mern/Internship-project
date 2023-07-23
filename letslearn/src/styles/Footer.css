@@ -1,0 +1,53 @@
+#footer-container{
+ 
+  height: fit-content;
+  padding: 10px;
+  background-color: #272643;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+}
+#footer-content
+{
+    display: inline-block;
+    padding: 10px;
+}
+#footer-content h3{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.footer-icons{
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    vertical-align: -12px;
+    cursor: pointer;
+    padding: 5px;
+}
+.footer-icons:hover
+{
+   color: red;
+   width:32px ;
+   height: 32px;
+   padding: 4px;
+   box-shadow: 1px 1px 10px 4px white;
+   border-radius: 5px;
+   animation: rotate 2.3s ease infinite;
+}
+@keyframes rotate {
+    0%
+    {
+        
+        box-shadow: 1px 1px 10px 4px rgb(254, 5, 5);
+    }
+    50%
+    {
+        color: rgb(0, 17, 255);
+    }
+    100%
+    {
+        
+        box-shadow: 1px 1px 10px 4px rgb(6, 248, 42);
+    }
+}
