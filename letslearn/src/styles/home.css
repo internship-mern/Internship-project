@@ -15,6 +15,7 @@
 #welcome-text
 {
     display: inline-block;
+    margin-right: 40px;
 }
 #Quote
 {
@@ -59,4 +60,16 @@
 {
     margin-right: 15px;
     vertical-align: -3px;
+}
+
+
+
+/* Responsive Query for Mobile and Tab */ 
+@media screen and (max-width:900px) {
+    #Quote
+    {
+        float: none;
+        display: inline-block;
+        font-size: 20px;
+    }
 }
