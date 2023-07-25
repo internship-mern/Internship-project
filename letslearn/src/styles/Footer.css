@@ -1,7 +1,7 @@
 #footer-container{
  
   height: fit-content;
-  padding: 10px;
+  padding: 5px;
   background-color: #272643;
   color: aliceblue;
   display: flex;
@@ -15,12 +15,12 @@
 #footer-content h3{
     display: inline-block;
     margin-right: 20px;
-    font-size: 20px;
+    font-size: 18px;
 }
 .footer-icons{
     margin-right: 20px;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     vertical-align: -12px;
     cursor: pointer;
     padding: 5px;
@@ -28,8 +28,8 @@
 .footer-icons:hover
 {
    
-   width:32px ;
-   height: 32px;
+   width:26px ;
+   height: 26px;
    padding: 4px;
    box-shadow: 1px 1px 10px 4px white;
    border-radius: 5px;

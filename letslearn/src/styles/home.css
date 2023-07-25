@@ -1,6 +1,6 @@
 #home-container
 {
-    padding: 20px;
+    padding: 17px;
     height: 100%;
     background-color: #e3f6f5;
 }
@@ -16,6 +16,7 @@
 {
     display: inline-block;
     margin-right: 40px;
+    font-size: 21px;
 }
 #Quote
 {
@@ -23,7 +24,7 @@
     text-align: center;
     float: right;
     margin-right: 30px; 
-    font-size: 20px;
+    font-size: 18px;
 }
 #cards-container
 {
@@ -31,24 +32,24 @@
     justify-content:space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 18px;
     
 }
 .cards
 {
-    width:430px;
+    width:400px;
     margin: 25px;
-    height: 300px;
+    height: 280px;
     border-radius: 10px;
     background-color:#bae8e8;
     border: 2px solid rgb(146, 146, 146);
     padding: 4px;
-    font-size: 15px;
+    font-size: 13px;
    /* background-image: url(../images/card-bg.jpg);*/
-    background-size:330px;
+    /*background-size:330px;*/
 }.cards:hover
 {
-    box-shadow: 1px 1px 10px -3px #747474;
+    box-shadow: 1px 1px 15px -3px #747474;
     margin: 23px;
     padding: 6px;
 }
