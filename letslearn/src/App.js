@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Layout from './components/Layout';
 import Home from './components/Home';
 import Footer from './components/Footer';
+import Protut from './components/Protut';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <main>
         <Header/>
         <Home/>
+        <Protut/>
         <Footer/>
       </main>
     </div>

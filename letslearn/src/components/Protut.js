@@ -3,7 +3,9 @@ import '../styles/Protut.css'
 
 const Protut = () => {
   return (
-    <div>Pro&tut</div>
+    <div>
+      
+    </div>
   )
 }
 
