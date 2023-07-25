@@ -4,7 +4,6 @@ import '../styles/Protut.css'
 const Protut = () => {
   return (
     <div>
-      
     </div>
   )
 }
