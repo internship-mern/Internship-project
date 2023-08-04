@@ -13,8 +13,7 @@ const Header = () => {
         </div>
         <div id='login-container'>
          <a href='/login'>Login</a>
-        </div>
-        
+        </div>       
     </div>
     </>
   )

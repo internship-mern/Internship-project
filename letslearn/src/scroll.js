@@ -1,4 +1,4 @@
-window.onscroll = function() {scrollFunction()};
+/*window.onscroll = function() {scrollFunction()};
 let height=85;
 function scrollFunction() {
   if (document.body.scrollTop > height || document.documentElement.scrollTop > height) {
@@ -6,4 +6,4 @@ function scrollFunction() {
   } else {
     document.getElementById("welcome-text-container").style.boxShadow="0 0 0 0 black";
   }
-}
+}*/
