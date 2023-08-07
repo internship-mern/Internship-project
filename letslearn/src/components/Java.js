@@ -18,7 +18,7 @@ James Gosling is known as the father of Java. Before Java, its name was Oak. Sin
        <h1>Key features of Java </h1>
        <div>
         <ul>
-    <li>,<b>Platform Independence:</b> Java programs are compiled into an intermediate bytecode that can run on any platform with a Java Virtual Machine (JVM). This allows Java applications to be executed on different operating systems without modification.</li>
+    <li><b>Platform Independence:</b> Java programs are compiled into an intermediate bytecode that can run on any platform with a Java Virtual Machine (JVM). This allows Java applications to be executed on different operating systems without modification.</li>
     <li><b>Object-Oriented:</b> Java follows the object-oriented programming paradigm, which means everything in Java is an object. This encourages modular and organized programming.</li>
     <li><b>Garbage Collection:</b> Java has an automatic garbage collection mechanism that manages memory, freeing developers from explicitly deallocating memory, which reduces memory leaks and segmentation faults. </li>
     <li><b>Strong Standard Library:</b> Java comes with a vast standard library (Java API) that provides ready-to-use classes and methods for common tasks, making development more efficient.</li>           
@@ -46,7 +46,7 @@ James Gosling is known as the father of Java. Before Java, its name was Oak. Sin
             <h1>Java Install</h1>
             <div>
                <p>Some PCs might have Java already installed. To check if you have Java installed on a Windows PC, search in the start bar for Java or type the following in Command Prompt (cmd.exe):</p>
-                {/* <p><b>C:\Users\Your Name>java -version</b></p> */}
+                {<p><b>C:\Users\Your Name &#62; java -version</b></p> }
                 
                 <p>
                 If Java is installed, you will see something like this (depending on version):<br/>
@@ -62,7 +62,7 @@ James Gosling is known as the father of Java. Before Java, its name was Oak. Sin
             <div>
              <p><b>To install Java on Windows:</b></p>
             <ol>
-            {/* <li>Go to "System Properties" (Can be found on Control Panel > System and Security > System > Advanced System Settings)</li> */}
+            {<li>Go to "System Properties" (Can be found on Control Panel &#62; System and Security &#62; System &#62; Advanced System Settings)</li> }
 <li>Click on the "Environment variables" button under the "Advanced" tab</li>
 <li>Then, select the "Path" variable in System variables and click on the "Edit" button</li>
 <li>Click on the "New" button and add the path where Java is installed, followed by \bin. By default, Java is installed in C:\Program Files\Java\jdk-11.0.1 (If nothing else was specified when you installed it). In that case, You will have to add a new path with: C:\Program Files\Java\jdk-11.0.1\bin</li>
@@ -82,10 +82,12 @@ Main.java</p>
 
 
 <code>
-{/* public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello World");
-  } */}
+public class Main &#123; <br/>
+  public static void main(String[] args)
+  <br/> &#123;<br/>
+    System.out.println("Hello World");<br/>
+  &#125;<br/>
+  &#125;
 </code>
 <p>
 Every line of code that runs in Java must be inside a class. In our example, we named the class Main.
@@ -115,9 +117,10 @@ For now, just remember that every Java program has a class name which must match
 <p>Inside the main() method, we can use the println() method to print a line of text to the screen:
 
 </p>
-  {/* <code>public static void main(String[] args) {
-    System.out.println("Hello World");
-  }</code> */}
+  <code>public static void main(String[] args) <br/>&#123;<br/>
+    System.out.println("Hello World");<br/>
+    &#125;<br/>
+    </code>
 
 </div>
 <h1>Print Text</h1>
@@ -127,9 +130,9 @@ For now, just remember that every Java program has a class name which must match
     <b>Example:</b>
   </p>
   <code>
-System.out.println("Hello World!");
-System.out.println("I am learning Java.");
-System.out.println("It is awesome!");
+System.out.println("Hello World!");<br/>
+System.out.println("I am learning Java.");<br/>
+System.out.println("It is awesome!");<br/>
 </code>
 </div>
 <h1>Double Quotes</h1>
@@ -155,9 +158,9 @@ However, unlike text, we don't put numbers inside double quotes:
 <br/>
 <b>Example:</b></p>
 <code>
-System.out.println(3);
-System.out.println(358);
-System.out.println(50000);
+System.out.println(3);<br/>
+System.out.println(358);<br/>
+System.out.println(50000);<br/>
 </code>
 </div>
 <h1>Java Comments</h1>
@@ -360,10 +363,10 @@ Type casting is when you assign a value of one primitive data type to another ty
 In Java, there are two types of casting:
 <br/>
 Widening Casting (automatically) - converting a smaller type to a larger type size<br/>
-{/* byte -> short -> char -> int -> long -> float -> double<br/> */}
+byte -&#62; short -&#62; char -&#62; int -&#62; long -&#62; float -&#62; double<br/>
 
 Narrowing Casting (manually) - converting a larger type to a smaller size type<br/>
-{/* double -> float -> long -> int -> char -> short -> byte<br/> */}
+double -&#62; float -&#62; long -&#62; int -&#62; char -&#62; short -&#62; byte<br/>
 
 </p>
 
@@ -456,10 +459,10 @@ valueOf()	-Returns the string representation of the specified value	<br/>
   <p>
   You already know that Java supports the usual logical conditions from mathematics:<br/>
 
-{/* Less than: a < b<br/>
-Less than or equal to: a <= b<br/>
-Greater than: a > b<br/>
-Greater than or equal to: a >= b <br/>*/}
+Less than: a &#62; b<br/>
+Less than or equal to: a  &#60;= b <br/>
+Greater than: a &#62; b<br/>
+Greater than or equal to: a &#62;= b <br/>
 Equal to a == b<br/>
 Not Equal to: a != b<br/>
 You can use these conditions to perform different actions for different decisions.<br/>
@@ -476,18 +479,21 @@ Use switch to specify many alternative blocks of code to be executed<br/>
   Use the else statement to specify a block of code to be executed if the condition is false.
   <br/>
 Syntax:<br/>
-if (condition) {<br/>
+if (condition) &#123;<br/>
   //block of code to be executed if the condition is true
-} else {<br/>
+  &#125;
+  else &#123;<br/>
   // block of code to be executed if the condition is false
-}<br/>
+  &#125;
+  <br/>
 Example:<br/>
 int time = 20<br/>;
-{/* if (time < 18) {<br/>
+if (time  &#60; 18) &#123;<br/>
   System.out.println("Good day.");<br/>
-} else {<br/>
+  &#125; else &#123;<br/>
   System.out.println("Good evening.");<br/>
-} */}<br/>
+  &#125;
+  <br/>
 // Outputs "Good evening."<br/>
   </p>
 </div>
@@ -501,7 +507,7 @@ Java Switch Statements
 The switch statement selects one of many code blocks to be executed:
 <br/>
 SyntaxGet your own Java Server<br/>
-{/* switch(expression) {<br/>
+switch(expression) &#123;<br/>
   case x:<br/>
     // code block<br/>
     break;<br/>
@@ -510,11 +516,11 @@ SyntaxGet your own Java Server<br/>
     break;<br/>
   default:<br/>
     // code block<br/>
-} */}<br/>
+   &#125;<br/>
 
 <b>Example:</b><br/>
 int day = 4;<br/>
-{/* switch (day) {<br/>
+switch (day) &#123; <br/>
   case 1:<br/>
     System.out.println("Monday");<br/>
     break;<br/>
@@ -536,7 +542,7 @@ int day = 4;<br/>
   case 7:<br/>
     System.out.println("Sunday");<br/>
     break;<br/>
-} */}<br/>
+    &#125;<br/>
 // Outputs "Thursday" (day 4)<br/>
 
   </p>
@@ -547,18 +553,18 @@ int day = 4;<br/>
 The while loop loops through a block of code as long as a specified condition is true:<br/>
 
 Syntax<br/>
-{/* while (condition) {<br/>
+while (condition) &#123;<br/>
   code block to be executed
-}<br/>
+  &#125;<br/>
 In the example below, the code in the loop will run, over and over again, as long as a variable (i) is less than 5:<br/>
 
 Example<br/>
 int i = 0;<br/>
-while (i < 5) {<br/>
+while (i &#60; 5) &#123;<br/>
   System.out.println(i);<br/>
   i++;<br/>
-}<br/>
- */}
+  &#125;<br/>
+
 
   </p>
 </div>
@@ -568,13 +574,13 @@ while (i < 5) {<br/>
 When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:<br/>
 
 Syntax<br/>
-for (statement 1; statement 2; statement 3) {<br/>
+for (statement 1; statement 2; statement 3) &#123;<br/>
   // code block to be executed<br/>
-}<br/>
-{/* Example<br/>
-for (int i = 0; i < 5; i++) {<br/>
+  &#125;<br/>
+Example<br/>
+for (int i = 0; i  &#60; 5; i++) &#123;<br/>
   System.out.println(i);<br/>
-} */}<br/>
+  &#125;<br/>
   </p>
 </div>
 <h1>Java Arrays</h1>
@@ -587,10 +593,10 @@ To declare an array, define the variable type with square brackets:
 String[] cars;<br/>
 We have now declared a variable that holds an array of strings. To insert values to it, you can place the values in a comma-separated list, inside curly braces:
 <br/>
-{/* String[] cars = {"Volvo", "BMW", "Ford", "Mazda"}; */}<br/>
+String[] cars = &#123;"Volvo", "BMW", "Ford", "Mazda"&#125;;<br/>
 To create an array of integers, you could write:<br/>
 
-{/* int[] myNum = {10, 20, 30, 40};</p> */}<br/>
+int[] myNum = &#123;10, 20, 30, 40&#125;; <br/>
 </p>
 </div>
 <h2>Other Concepts are Coming Soon Guys ~!</h2>

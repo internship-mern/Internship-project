@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-/*window.onscroll = function() {scrollFunction()};
-=======
- /* window.onscroll = function() {scrollFunction()};
->>>>>>> 9f0322c982fed54f87b80d1777ea4fa2923b82d9
+  window.onscroll = function() {scrollFunction()};
 let height=85;
 function scrollFunction() {
   if (document.body.scrollTop > height || document.documentElement.scrollTop > height) {
@@ -10,8 +6,4 @@ function scrollFunction() {
   } else {
     document.getElementById("welcome-text-container").style.boxShadow="0 0 0 0 black";
   }
-<<<<<<< HEAD
-}*/
-=======
-} */
->>>>>>> 9f0322c982fed54f87b80d1777ea4fa2923b82d9
+}
