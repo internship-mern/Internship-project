@@ -594,29 +594,7 @@ To create an array of integers, you could write:<br/>
 </p>
 </div>
 <h2>Other Concepts are Coming Soon Guys ~!</h2>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
      </div>           
-     
   )
 }
-
 export default Java
