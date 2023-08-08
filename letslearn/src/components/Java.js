@@ -565,7 +565,6 @@ while (i &#60; 5) &#123;<br/>
   i++;<br/>
   &#125;<br/>
 
-
   </p>
 </div>
 <h1>  Java For Loop</h1>
@@ -600,7 +599,7 @@ int[] myNum = &#123;10, 20, 30, 40&#125;; <br/>
 </p>
 </div>
 <h2>Other Concepts are Coming Soon Guys ~!</h2>
-     </div>           
+    </div>           
   )
 }
 export default Java
