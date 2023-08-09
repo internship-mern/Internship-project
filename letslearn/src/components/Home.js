@@ -1,6 +1,5 @@
 import React from 'react'
-import '../styles/home.css'
-import '../scroll.js'
+
 import {FaDesktop,FaFileAlt,FaFileVideo,FaLaptopCode,FaFacebookMessenger,FaFolder} from 'react-icons/fa'
 
 const Home = () => {
