@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Quiz from "./components/Quiz";
 import Protut from "./components/Protut";
 import Chat from "./components/Chat";
+import Python from "./components/Python";
 import Ctut from "./components/Ctut";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <main>
         <Header />
         <Ctut/>
+        <Java/>
         <Footer/>
       </main>
     </div>
