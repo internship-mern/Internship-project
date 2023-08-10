@@ -3,10 +3,48 @@ import '../styles/Java.css'
 
 const Java = () => {
   return (
-     <div>
-      
-      <h1>JAVA</h1>
-       <div>
+     <div >
+      <div className="side-div-container">
+        <h1 >TOPIC</h1>
+        <ul>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#key">Key features of Java</a></li>
+      <li><a href="#install">Java Install</a></li>
+      <li><a href="#start">Java Quickstart</a></li>
+      <li><a href="#main">The main Method</a></li>
+      <li><a href="#text">Print Text</a></li>
+      <li><a href="#num">Print Numbers</a></li>
+      <li><a href="#comm">Java Comments</a></li>
+      <li><a href="#vari">Java Variables</a></li>
+      <li><a href="#final">Final Variables
+</a></li>
+      <li><a href="#ident">Java Identifiers
+</a></li>
+      <li><a href="#dt">Java Data Types
+</a></li>
+      <li><a href="#cast">Java Type Casting
+</a></li>
+      <li><a href="#oper">Java Operators
+</a></li>
+      <li><a href="#str">Java Strings
+</a></li>
+      <li><a href="#method">String Methods</a></li>
+      <li><a href="#if">Java Conditions and If Statements
+</a></li>
+      <li><a href="#switch">Java Switch Statements
+</a></li>
+      <li><a href="#while">Java While Loop
+</a></li>
+      <li><a href="#for">Java For Loop
+</a></li>
+      <li><a href="#arr">Java Arrays
+</a></li>
+      </ul>
+
+      </div>
+      <div class="color">
+      <h1 id="intro">JAVA Introduction</h1>
+       <div class=" content">
         <p>
            
 Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.<br/>
@@ -15,8 +53,8 @@ James Gosling is known as the father of Java. Before Java, its name was Oak. Sin
          
         </p>
        </div>
-       <h1>Key features of Java </h1>
-       <div>
+       <h1 id="key">Key features of Java </h1>
+       <div class=" content">
         <ul>
     <li><b>Platform Independence:</b> Java programs are compiled into an intermediate bytecode that can run on any platform with a Java Virtual Machine (JVM). This allows Java applications to be executed on different operating systems without modification.</li>
     <li><b>Object-Oriented:</b> Java follows the object-oriented programming paradigm, which means everything in Java is an object. This encourages modular and organized programming.</li>
@@ -28,9 +66,9 @@ James Gosling is known as the father of Java. Before Java, its name was Oak. Sin
           </ul>
        </div>
 
-         <h1> Why Use Java?</h1>
+         <h1 id=""> Why Use Java?</h1>
 
-         <div>
+         <div class=" content">
           <ul>
             <li>Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)</li>
             <li>It is one of the most popular programming language in the world</li>
@@ -43,8 +81,8 @@ James Gosling is known as the father of Java. Before Java, its name was Oak. Sin
             <li>As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or vice versa</li>
           </ul>
          </div>
-            <h1>Java Install</h1>
-            <div>
+            <h1 id="install">Java Install</h1>
+            <div class=" content">
                <p>Some PCs might have Java already installed. To check if you have Java installed on a Windows PC, search in the start bar for Java or type the following in Command Prompt (cmd.exe):</p>
                 {<p><b>C:\Users\Your Name &#62; java -version</b></p> }
                 
@@ -58,8 +96,8 @@ James Gosling is known as the father of Java. Before Java, its name was Oak. Sin
                 Environment, such as IntelliJ IDEA, Netbeans or Eclipse, which are particularly useful when managing larger collections of Java files.</p>
                 </p>
             </div>
-            <h1>Setup for Windows</h1>
-            <div>
+            <h1 id="">Setup for Windows</h1>
+            <div class=" content">
              <p><b>To install Java on Windows:</b></p>
             <ol>
             {<li>Go to "System Properties" (Can be found on Control Panel &#62; System and Security &#62; System &#62; Advanced System Settings)</li> }
@@ -70,8 +108,8 @@ James Gosling is known as the father of Java. Before Java, its name was Oak. Sin
 <li>At last, open Command Prompt (cmd.exe) and type java -version to see if Java is running on your machine</li>
 </ol>
 </div>
-<h1>Java Quickstart</h1>
-<div>
+<h1 id="start">Java Quickstart</h1>
+<div class=" content">
 <p>In Java, every application begins with a class name, and that class must match the filename.
 <br/>
 Let's create our first Java file, called Main.java, which can be done in any text editor (like Notepad).
@@ -102,8 +140,8 @@ The name of the java file must match the class name. When saving the file, save 
 Hello World
 </p>
 </div>
-<h1>The main Method</h1>
-<div>
+<h1 id="main">The main Method</h1>
+<div class=" content">
 <p>The main() method is required and you will see it in every Java program:</p>
 <code>public static void main(String[] args)</code>
 <p>Any code inside the main() method will be executed. Don't worry about the keywords before and after main. You will get to know them bit by bit while reading this tutorial.
@@ -111,9 +149,9 @@ Hello World
 For now, just remember that every Java program has a class name which must match the filename, and that every program must contain the main() method.
 </p>
 </div>
-<h1>System.out.println()
+<h1 id="">System.out.println()
 </h1>
-<div>
+<div class=" content">
 <p>Inside the main() method, we can use the println() method to print a line of text to the screen:
 
 </p>
@@ -123,8 +161,8 @@ For now, just remember that every Java program has a class name which must match
     </code>
 
 </div>
-<h1>Print Text</h1>
-<div>
+<h1 id="text">Print Text</h1>
+<div class=" content">
   <p>You can add as many println() methods as you want. Note that it will add a new line for each method:
     <br/>
     <b>Example:</b>
@@ -135,8 +173,8 @@ System.out.println("I am learning Java.");<br/>
 System.out.println("It is awesome!");<br/>
 </code>
 </div>
-<h1>Double Quotes</h1>
-<div>
+<h1 id="">Double Quotes</h1>
+<div class=" content">
 <p>When you are working with text, it must be wrapped inside double quotations marks "".
 <br/>
 If you forget the double quotes, an error occurs:
@@ -148,10 +186,10 @@ If you forget the double quotes, an error occurs:
 System.out.println(This sentence will produce an error);
 </code>
 </div>
-<h1>
+<h1 id="num">
 Print Numbers
 </h1>
-<div>
+<div class=" content">
   <p>You can also use the println() method to print numbers.
 <br/>
 However, unlike text, we don't put numbers inside double quotes:
@@ -163,15 +201,15 @@ System.out.println(358);<br/>
 System.out.println(50000);<br/>
 </code>
 </div>
-<h1>Java Comments</h1>
-<div>
+<h1 id="comm">Java Comments</h1>
+<div class=" content">
   <p>
   Comments can be used to explain Java code, and to make it more readable. 
   <br/>It can also be used to prevent execution when testing alternative code.
   </p>
 </div>
-<h1>Single-line Comments</h1>
-<div>
+<h1 id="">Single-line Comments</h1>
+<div class=" content">
 <p>
 Single-line comments start with two forward slashes (//).
 <br/>
@@ -192,8 +230,8 @@ System.out.println("Hello World");
 <code>System.out.println("Hello World"); // This is a comment</code>
 
 </div>
-<h1>Java Multi-line Comments</h1>
-<div>
+<h1 id="">Java Multi-line Comments</h1>
+<div class=" content">
 <p>
 Multi-line comments start with /* and ends with */.
 <br/>
@@ -209,10 +247,10 @@ to the screen, and it is amazing */
 System.out.println("Hello World");
 </code>
 </div>
-<h1>
+<h1 id="vari">
 Java Variables
 </h1>
-<div>
+<div class=" content">
   <p>
   Variables are containers for storing data values.
 <br/>
@@ -226,8 +264,8 @@ In Java, there are different types of variables, for example:
     <li>boolean - stores values with two states: true or false</li>
   </ol>
 </div>
-<h1>Declaring (Creating) Variables</h1>
-<div>
+<h1 id="">Declaring (Creating) Variables</h1>
+<div class=" content">
 <p>To create a variable, you must specify the type and assign it a value:</p>
 <p>Syntax: type variableName = value;</p>
 <p>
@@ -246,8 +284,8 @@ System.out.println(myNum);
 </code>
 
 </div>
-<h1>Final Variables</h1>
-<div>
+<h1 id="final">Final Variables</h1>
+<div class=" content">
 <p>If you don't want others (or yourself) to overwrite existing values, use the final keyword 
   <br/>(this will declare the variable as "final" or "constant", which means unchangeable and read-only):
 </p>
@@ -256,8 +294,8 @@ final int myNum = 15;
 myNum = 20;  // will generate an error: cannot assign a value to a final variable
 </code>
 </div>
-<h1>Other Types</h1>
-<div>
+<h1 id="">Other Types</h1>
+<div class=" content">
 <p>A demonstration of how to declare variables of other types:</p>
 <p>
 <b>Example : 
@@ -269,7 +307,7 @@ boolean myBool = true;<br/>
 String myText = "Hello";<br/>
 </p>
 </div>
-<h1>Display Variables</h1>
+<h1 id="">Display Variables</h1>
 <p>The println() method is often used to display variables.
 <br/>
 To combine both text and a variable, use the + character:
@@ -280,7 +318,7 @@ String name = "John";<br/>
 System.out.println("Hello " + name);
 <br/>
 </p>
-<h1>Declare Many Variables</h1>
+<h1 id="">Declare Many Variables</h1>
 <p>
 To declare more than one variable of the same type, you can use a comma-separated list:
 <br/>
@@ -297,8 +335,8 @@ int x = 5, y = 6, z = 50;<br/>
 System.out.println(x + y + z);<br/>
 
 </p>
-<h1>Java Identifiers</h1>
-<div>
+<h1 id="ident">Java Identifiers</h1>
+<div class=" content">
 <p>
 All Java variables must be identified with unique names.
 <br/>
@@ -315,8 +353,8 @@ int minutesPerHour = 60;<br/>
 int m = 60;<br/>
 </p>
 </div>
-<h1>Java Data Types</h1>
-<div><p>
+<h1 id="dt">Java Data Types</h1>
+<div class=" content"><p>
 As explained in the previous chapter, a variable in Java must be a specified data type:
 <br/>
 <b>Example:</b><br/>
@@ -326,8 +364,8 @@ char myLetter = 'D';         // Character<br/>
 boolean myBool = true;       // Boolean<br/>
 String myText = "Hello";     // String<br/>
 </p></div>
-<h1>Java Numbers</h1>
-<div>
+<h1 id="">Java Numbers</h1>
+<div class=" content">
 <p>
 Primitive number types are divided into two groups:
 <br/>
@@ -336,8 +374,8 @@ Integer types stores whole numbers, positive or negative (such as 123 or -456), 
 Floating point types represents numbers with a fractional part, containing one or more decimals. There are two types: float and double.
 <br/></p>
 </div>
-<h1>Non-Primitive Data Types</h1>
-<div>
+<h1 id="">Non-Primitive Data Types</h1>
+<div class=" content">
 <p>
   Non-primitive data types are called reference types because they refer to objects.
 <br/>
@@ -355,8 +393,8 @@ A primitive type starts with a lowercase letter, while non-primitive types start
 Examples of non-primitive types are Strings, Arrays, Classes, Interface, etc. You will learn more about these in a later chapter.<br/>
 </p>
 </div>
-<h1>Java Type Casting</h1>
-<div>
+<h1 id="cast">Java Type Casting</h1>
+<div class=" content">
 <p>
 Type casting is when you assign a value of one primitive data type to another type.
 <br/>
@@ -372,8 +410,8 @@ double -&#62; float -&#62; long -&#62; int -&#62; char -&#62; short -&#62; byte<
 
 
 </div>
-<h1>Java Operators</h1>
-<div>
+<h1 id="oper">Java Operators</h1>
+<div class=" content">
 <p>Java divides the operators into the following groups:</p>
 <ul>
 <li>Arithmetic operators
@@ -392,8 +430,8 @@ Bitwise operators
 </li>
 </ul>
 </div>
-<h1>Java Strings</h1>
-<div>
+<h1 id="str">Java Strings</h1>
+<div class=" content">
   <p>
   Strings are used for storing text.
   <br/>
@@ -405,8 +443,8 @@ Create a variable of type String and assign it a value:<br/>
 String greeting = "Hello";<br/>
   </p>
 </div>
-<h1>All String Methods</h1>
-<div>
+<h1 id="method">All String Methods</h1>
+<div class=" content">
   <p>
   Method	- Description	:<br/>
 
@@ -454,8 +492,8 @@ valueOf()	-Returns the string representation of the specified value	<br/>
     ect.....,
   </p>
 </div>
-<h1>Java Conditions and If Statements</h1>
-<div>
+<h1 id="if">Java Conditions and If Statements</h1>
+<div class=" content">
   <p>
   You already know that Java supports the usual logical conditions from mathematics:<br/>
 
@@ -497,10 +535,10 @@ if (time  &#60; 18) &#123;<br/>
 // Outputs "Good evening."<br/>
   </p>
 </div>
-<h1>
+<h1 id="switch">
 Java Switch Statements
 </h1>
-<div>
+<div class=" content">
   <p>
   Instead of writing many if..else statements, you can use the switch statement.
   <br/>
@@ -547,8 +585,8 @@ switch (day) &#123; <br/>
 
   </p>
 </div>
-<h1>  Java While Loop</h1>
-<div>
+<h1 id="while">  Java While Loop</h1>
+<div class=" content">
   <p>
 The while loop loops through a block of code as long as a specified condition is true:<br/>
 
@@ -567,8 +605,8 @@ while (i &#60; 5) &#123;<br/>
 
   </p>
 </div>
-<h1>  Java For Loop</h1>
-<div>
+<h1 id="for">  Java For Loop</h1>
+<div class=" content">
   <p>
 When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:<br/>
 
@@ -582,8 +620,8 @@ for (int i = 0; i  &#60; 5; i++) &#123;<br/>
   &#125;<br/>
   </p>
 </div>
-<h1>Java Arrays</h1>
-<div>
+<h1 id="arr">Java Arrays</h1>
+<div class=" content">
   <p>
 Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
 <br/>
@@ -599,7 +637,8 @@ int[] myNum = &#123;10, 20, 30, 40&#125;; <br/>
 </p>
 </div>
 <h2>Other Concepts are Coming Soon Guys ~!</h2>
-    </div>           
+    </div>       
+    </div>    
   )
 }
 export default Java

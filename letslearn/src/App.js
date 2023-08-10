@@ -9,14 +9,14 @@ import Protut from "./components/Protut";
 import Chat from "./components/Chat";
 import Python from "./components/Python";
 import Ctut from "./components/Ctut";
+import Java from "./components/Java";
 
 function App() {
   return (
     <div className="App">
       <main>
         <Header />
-        <Ctut/>
-        <Java/>
+        <Protut/>
         <Footer/>
       </main>
     </div>

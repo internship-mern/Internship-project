@@ -114,16 +114,20 @@ const Ctut = () => {
           <div class=" content"><b>Hello World!</b><br></br>
             Process returned 0 (0x0) execution time : 0.011 s<br></br>
             Press any key to continue.</div>
-          <h2 id="">C++ Syntax</h2>
-          <h2 id="">Example</h2>
+         
           <div class=" content">
-            coding
+          
           </div>
           <h2 id="">C++ Output (Print Text)</h2>
           <h3>Example
           </h3>
           <div class=" content">
+          #include &lt;iostream&gt;<br/>
+using namespace std;<br/>
 
+int main() <br/>
+  cout &lt;&lt; "Hello World!";<br></br>
+  return 0;<br/>
           </div>
           <h2 id="comm">C++ Comments</h2>
           <div class=" content">
@@ -532,8 +536,8 @@ The "inner loop" will be executed one time for each iteration of the "outer loop
   
 </div>
 </div>
-<h2 id="">The foreach Loop</h2>
 <div class=" content"></div>
+<h3>Other Concepts are Coming Soon Guys ~!</h3>
       </div>
     </div>
     </>
