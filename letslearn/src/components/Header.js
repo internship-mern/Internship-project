@@ -1,10 +1,6 @@
-import React, { useContext, useEffect, useState } from "react";
-import "../styles/Header.css";
-import { FaUserCircle } from "react-icons/fa";
-import { getloggedin, logout } from "../api/client";
-import { userContext } from "./userContect";
-import { Navigate } from "react-router-dom";
-
+import React from 'react'
+import '../styles/Header.css'
+import {FaUserCircle} from 'react-icons/fa'
 const Header = () => {
   const { userInfo, setInfo,setLoggedin} = useContext(userContext);
   useEffect(() => {
@@ -33,11 +29,11 @@ const Header = () => {
         <div id="login-icon-container">
           <FaUserCircle id="login-icon" />
         </div>
-        <div id="login-container">
-          {!userInfo.username && <a href="/">Login</a>}
-          {userInfo.username && <a href="/Home">{userInfo.username}</a>}
+        <div id='login-container'>
+         <a href='/login'>Login</a>
         </div>
-      </div>
+        
+    </div>
     </>
   );
 };

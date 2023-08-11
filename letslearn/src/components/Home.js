@@ -1,22 +1,7 @@
-import React, { useContext, useState } from "react";
-import "../styles/home.css";
-import "../scroll.js";
-import {
-  FaDesktop,
-  FaFileAlt,
-  FaFileVideo,
-  FaLaptopCode,
-  FaFacebookMessenger,
-  FaFolder,
-} from "react-icons/fa";
-import {
-  FaFilePdf,
-  FaFileWord,
-  FaFilePowerpoint,
-  FaArrowRightLong,
-} from "react-icons/fa6";
-import { Link, Navigate } from "react-router-dom";
-import { userContext } from "./userContect";
+import React from 'react'
+import '../styles/home.css'
+import '../scroll.js'
+import {FaDesktop,FaFileAlt,FaFileVideo,FaLaptopCode,FaFacebookMessenger,FaFolder} from 'react-icons/fa'
 
 const Home = () => {
   const { loggedin } = useContext(userContext);
