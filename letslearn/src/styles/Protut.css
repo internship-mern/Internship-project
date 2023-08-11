@@ -50,9 +50,16 @@ body{
 {
     background: black;
     width: fit-content;
-    color: #fff;
     padding: 11px;
     margin-left: 78%;
     border-bottom-right-radius: 15px;
     border-top-left-radius:15px ;
+}
+.btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.btn:hover, a:hover
+{
+    opacity: 0.8;
 }
