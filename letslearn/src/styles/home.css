@@ -43,26 +43,95 @@
     border-radius: 10px;
     background-color:#bae8e8;
     border: 2px solid rgb(146, 146, 146);
-    padding: 4px;
+    padding: 4px 0px 4px 4px;
     font-size: 13px;
    /* background-image: url(../images/card-bg.jpg);*/
     /*background-size:330px;*/
 }.cards:hover
 {
     box-shadow: 1px 1px 15px -3px #747474;
-    margin: 23px;
-    padding: 6px;
 }
 .cards h2{
     text-align: center;
     line-height: 22px;
+    color: black;
+    padding:0px 10px 19px 0px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid black;
+
 }
 .card-icons
 {
     margin-right: 15px;
     vertical-align: -3px;
 }
+.card-content-box
+{
+    /* background-color: #05d2d2; */
+    height: 140px;
+    padding: 1px 5px 9px 23px;
+}
+.card-content-box h3{
+    font-size: 18px;
+}
+.card-content-box ul li{
+    font-size: 18px;
+}
+.cards-icon-file
+{
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
 
+/*style for single tut card*/
+#card-content-box
+{
+    /* background-color: #05d2d2; */
+    height: 120px;
+    padding: 5px;
+}
+/*style for single tut card*/
+
+
+.card-button-div
+{
+    background-color: #2c2b45;
+    float: right;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card-button-div:hover{
+    box-shadow: 1px 1px 5px 1px black;
+    
+}
+.card-button {
+ font-size: 15px;
+ color: white;
+ 
+ font-weight: bold;
+ text-decoration: none;
+ display: inline;
+}
+.card-button-arrow
+{
+    color: white;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left:5px;
+}
+.card-button-div:hover .card-button-arrow
+{
+    transition: 0.5s ease;
+    margin-left: 10px;
+    transform: rotate(360deg);
+} 
 
 
 /* Responsive Query for Mobile and Tab */ 

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Ctut = () => {
   return (
-    <div>Ctut</div>
+    <div><h2>C tutorial</h2></div>
   )
 }
 

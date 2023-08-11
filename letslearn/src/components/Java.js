@@ -4,7 +4,7 @@ import '../styles/Java.css'
 const Java = () => {
   return (
     <div>
-     
+     <h2>Java</h2>
     </div>
   )
 }
