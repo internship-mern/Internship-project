@@ -2,7 +2,6 @@ import React from 'react'
 import '../styles/Footer.css'
 import {FaInstagram,FaTwitter,FaFacebookSquare} from 'react-icons/fa'
 
-
 const Footer = () => {
   return (
     <div id='footer-container'>

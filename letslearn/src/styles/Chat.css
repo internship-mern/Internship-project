@@ -1,11 +1,12 @@
 #chat-container
 {
-    background-color: aliceblue;
+    background-color: rgb(226, 242, 255);
     border: 2px solid #272643;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     margin: 30px;
-    height: 550px;
+
+    
 }
 #chat-title
 {
@@ -13,6 +14,7 @@
     padding: 20px;
     background-color: #272643;
     color: white;
+   
 }
 #chat-messages
 {
@@ -21,51 +23,77 @@
   margin-bottom: 13px;
   overflow: scroll;
   overflow-x: hidden; 
+ display: flex;
+ flex-direction: column;
 
 }
-#chat-message
+.chat-message-own
 {
-    background-color: rgb(182, 195, 195);
-    width: fit-content;
-    border-radius: 5px;
+    box-shadow: 1px 1px 11px 1px  rgb(98, 98, 98);
+    background-color: rgb(214, 236, 255);
+    max-width: 600px;
     cursor: pointer;
     margin: 10px;
     font-size: 18px;
+    border-radius: 5px;
+    padding: 5px;
+    justify-items:right;
+    
 }
-#chat-message-content
+.message-own
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    margin-right: 50px;
+    width: auto;
+    word-wrap:break-word;
+}
+.message-others
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    margin-left: 50px;
+    width: auto;
+    word-wrap:break-word;
+}
+.chat-message-content
 {
     padding: 10px;
+    display: inline;
+    font-size: 18px;
 }
-#chat-message-name
+.chat-message-name
 {
     color: aliceblue;
     padding-left: 20px;
+    padding-right: 20px;
     margin:0px 0px 10px 0px;
     background-color: #272643;
+    
 }
-#chat-input
-{
-    height: 30px;
-    width: 100%;
-    background-color:transparent;
+.chat-message-name h2{
+    display: inline;
+    font-size: 15px;
+    margin-left: 20px;
 }
 #chat-input input
 {
+    display: inline-block;
     width: 90%;
     height: 30px;
     font-size: 20px;
-    border-radius: 5px;
-    padding-left: 10px;
+    padding:20px;
+    background-color:aliceblue;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom: 2px solid black;
 }
-#chat-input button
-{
-    border-radius: 5px;
-    vertical-align: 3px;
-    width: 8%;
-    height: 35px;
-    margin-left: 4px;
-    cursor: pointer;
-    background-color: rgb(33, 102, 33);
-    color: white;
+#chat-input button{
+    width: 100px;
+    display: inline-block;
+    margin: 10px;
 }
 
