@@ -8,9 +8,10 @@ export function UserContextProvider({children})
     const [loggedin,setLoggedin]=useState(false)
     const [err,setErr]=useState("")
     const [messages,setMessages]=useState({})
+    const [temp,setTemp] = useState(true)
 
     return(
-        <userContext.Provider value={{err,setErr,userInfo,setInfo,loggedin,setLoggedin,messages,setMessages}}>
+        <userContext.Provider value={{err,setErr,userInfo,setInfo,loggedin,setLoggedin,messages,setMessages,temp,setTemp}}>
             {children}
         </userContext.Provider>
     )

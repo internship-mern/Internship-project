@@ -1,10 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/Python.css'
 
 const Python = () => {
+ 
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const containerStyle = {
+    top:scrollPosition > 60 ? '0' : `${67-scrollPosition}px`,
+    height:'100%'
+  };
+
   return (
     <div>
-      <div className="side-div-container">
+      <div className="side-div-container" style={containerStyle}>
         <h1>TOPIC</h1>
         <ul>
         <li><a href="#intro">Python Introduction</a></li>

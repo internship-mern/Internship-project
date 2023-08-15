@@ -45,13 +45,7 @@
 .side-div-container ul li:hover
 {
     color: rgb(80, 80, 83);
-    box-shadow:0 0 5px rgb(80, 80, 83);
-   
-    
-}
-#intro
-{
-    
+    box-shadow:0 0 5px rgb(80, 80, 83); 
 }
 .color{
     margin-left: 400px;
@@ -77,9 +71,4 @@
     font-size: 20px;
     line-height: 30px;
     font-weight: 500;
-}
-.content-eg
-{
-    
-    
 }

@@ -1,15 +1,15 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import "../styles/Login.css";
 import { loginApi } from "../api/client";
 import { useState } from "react";
 import { userContext } from "./userContect";
-import { Link, Navigate } from "react-router-dom";
+import  {Navigate } from "react-router-dom";
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const { err,userInfo, setErr, setInfo,loggedin, setLoggedin } =
-    useContext(userContext);
+  const { err,userInfo, setErr, setInfo,loggedin, setLoggedin } =useContext(userContext);
+ 
   const Loginapi = async (e) => {
     document.getElementById("loading").style.display = "block";
     e.preventDefault();
@@ -27,10 +27,10 @@ const Login = () => {
   return (
     <div>
       <form onSubmit={Loginapi}>
-        <h2>Welcome to Let's Learn.</h2>
+        <h2>Let's Learn.</h2>
         <br />
 
-        <label for="username">User name</label>
+        <label>User name</label>
         <input
           type="text"
           name="user-name"
@@ -38,7 +38,7 @@ const Login = () => {
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
-        <label for="userpassword">Password</label>
+        <label >Password</label>
         <input
           type="password"
           name="user-password"

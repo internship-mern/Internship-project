@@ -1,22 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap");
-
-
-*
-{
-    font-family: "Nunito Sans", sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 .head{
     text-align: center;
     margin-top: 25px;
 }
-
-body{
-    background: #e3f6f5;
-}
-.container
+.container2
 {
     display: flex;
     flex-direction: row;

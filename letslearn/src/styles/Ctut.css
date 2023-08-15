@@ -16,11 +16,11 @@
 {
     width: 400px;
     background-color: rgba(165, 228, 228, 0.607);
-    height: 90%;
     position: fixed;
     float: left;
     top:69px;
     overflow: scroll;
+    height: 100%;
 }
 .side-div-container h1
 {
@@ -58,10 +58,6 @@
    
     
 }
-#intro
-{
-    
-}
 .color{
     margin-left: 400px;
     padding: 30px;
@@ -86,9 +82,4 @@
     font-size: 20px;
     line-height: 30px;
     font-weight: 500;
-}
-.content-eg
-{
-    
-    
 }

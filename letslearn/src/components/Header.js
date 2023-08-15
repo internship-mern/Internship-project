@@ -1,17 +1,20 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import '../styles/Header.css'
 import {FaUserCircle} from 'react-icons/fa'
+import { userContext } from './userContect';
+import { getloggedin, logout } from '../api/client';
 const Header = () => {
   const { userInfo, setInfo,setLoggedin} = useContext(userContext);
   useEffect(() => {
     getloggedin(setInfo,setLoggedin);
-  }, [setInfo]);
+  }, [setInfo,setLoggedin]);
    const logt=(e)=>
    {
      e.preventDefault();
      logout();
      setInfo({});
      setLoggedin(false);
+    
    }
   return (
     <>
@@ -23,15 +26,23 @@ const Header = () => {
         </div>
         {userInfo.username && (
           <div id="login-container">
-            <a onClick={logt}>Logout</a>
+            <a href='/' onClick={logt}>Logout</a>
           </div>
         )}
         <div id="login-icon-container">
           <FaUserCircle id="login-icon" />
         </div>
-        <div id='login-container'>
-         <a href='/login'>Login</a>
+        {(userInfo.username)?
+        (
+         <div id='login-container'>
+         <a>{userInfo.username}</a>
         </div>
+        ):
+        <div id='login-container'>
+         <a href='/'>Login</a>
+        </div>
+        }
+        
         
     </div>
     </>

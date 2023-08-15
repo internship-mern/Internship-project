@@ -1,13 +1,7 @@
 import axios from "axios";
 const url = "http://localhost:5000";
 
-const loginApi = async (
-  username,
-  password,
-  setInfo,
-  setLoggedin
-) => {
-  
+const loginApi = async (username, password, setInfo, setLoggedin) => {
   await axios
     .post(`${url}/login`, { username, password }, { withCredentials: true })
     .then((data) => {
@@ -31,16 +25,14 @@ const signupApi = async (username, password, key, setStatus) => {
 };
 export { signupApi };
 
-const getloggedin = async (setInfo,setLoggedin) => {
+const getloggedin = async (setInfo, setLoggedin) => {
   await axios
     .post(`${url}/profile`, {}, { withCredentials: true })
     .then((data) => {
-     if(data.data!=="")
-     {
-      setInfo(data.data);
-      setLoggedin(true);
-     }
-      
+      if (data.data !== "") {
+        setInfo(data.data);
+        setLoggedin(true);
+      }
     });
 };
 export { getloggedin };
@@ -50,26 +42,32 @@ const logout = async () => {
 };
 export { logout };
 
-const newmessage=async(message,sendby)=>
-{
-   await axios.post(`${url}/newmessage`,{message , sendby},{withCredentials:true}).then((data)=>
-   {
-     if(data.status!==200)
-     {
-      console.log(data.data);
-     }
-   })
-}
-export {newmessage}
+const newmessage = async (message, sendby,setTemp,setMessages) => {
+  await axios
+    .post(`${url}/newmessage`, { message, sendby }, { withCredentials: true })
+    .then((data) => {
+      if (data.status === 200) {
+        setTemp(true)
+        
+      }
+    });
+};
+export { newmessage };
 
-const allmessages=async(setMessages)=>
-{
-  await axios.get(`${url}/allmessages`,{withCredentials:true}).then((data)=>
-  {
-    if(data.status===200)
-    {
-      setMessages(data.data)
-    }
-  })
-}
-export {allmessages}
+const allmessages = async (setMessages) => {
+  await axios
+    .get(`${url}/allmessages`, { withCredentials: true })
+    .then((data) => {
+      if (data.status === 200) {
+        setMessages(data.data);
+      }
+    });
+};
+export { allmessages };
+
+const deleteMessages = async (_id,setMessages) => {
+  await axios.post(`${url}/deletmessage`,{_id}, { withCredentials: true }).then((data)=>
+    setMessages(data.data)
+    )
+};
+export { deleteMessages };

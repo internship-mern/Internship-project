@@ -1,11 +1,26 @@
-import React from 'react'
-import '../styles/home.css'
-import '../scroll.js'
-import {FaDesktop,FaFileAlt,FaFileVideo,FaLaptopCode,FaFacebookMessenger,FaFolder} from 'react-icons/fa'
+import React, { useContext, useState } from "react";
+import "../styles/home.css";
+
+import {
+  FaDesktop,
+  FaFileAlt,
+  FaFileVideo,
+  FaLaptopCode,
+  FaFacebookMessenger,
+  FaFolder,
+} from "react-icons/fa";
+import {
+  FaFilePdf,
+  FaFileWord,
+  FaFilePowerpoint,
+  FaArrowRightLong,
+} from "react-icons/fa6";
+import { Link, Navigate } from "react-router-dom";
+import { userContext } from "./userContect";
 
 const Home = () => {
   const { loggedin } = useContext(userContext);
-  console.log(loggedin);
+
   if (loggedin === false) {
     return <Navigate to={"/"} />;
   }
@@ -88,7 +103,13 @@ const Home = () => {
             <FaLaptopCode className="card-icons" /> Programming Languages <br />{" "}
             & Tutorials
           </h2>
-          <div id="card-content-box"></div>
+          <div id="card-content-box">
+            <ul>
+              <li>Python Tutorial</li>
+              <li>Java Tutorial</li>
+              <li>C Tutorial</li>
+            </ul>
+          </div>
           <Link to={"/protut"}>
             <div className="card-button-div">
               {" "}
