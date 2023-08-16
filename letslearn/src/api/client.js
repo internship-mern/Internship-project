@@ -1,7 +1,7 @@
 import axios from "axios";
 const url = "http://localhost:5000";
 
-const loginApi = async (username, password, setInfo, setLoggedin) => {
+const loginApi = async (username, password, setInfo, setLoggedin,setErr) => {
   await axios
     .post(`${url}/login`, { username, password }, { withCredentials: true })
     .then((data) => {
@@ -47,8 +47,7 @@ const newmessage = async (message, sendby,setTemp,setMessages) => {
     .post(`${url}/newmessage`, { message, sendby }, { withCredentials: true })
     .then((data) => {
       if (data.status === 200) {
-        setTemp(true)
-        
+        setTemp(true)  
       }
     });
 };

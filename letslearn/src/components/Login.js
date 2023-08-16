@@ -14,7 +14,7 @@ const Login = () => {
     document.getElementById("loading").style.display = "block";
     e.preventDefault();
     if (username !== "" && password !== "") {
-      await loginApi(username, password, setInfo,setLoggedin);
+      await loginApi(username, password, setInfo,setLoggedin,setErr);
     } else {
       document.getElementById("loading").style.display = "none";
       setErr("Please Fill all the details!..");
